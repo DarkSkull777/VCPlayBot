@@ -5,7 +5,7 @@ from VCPlayBot.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
 from VCPlayBot.services.callsmusic import run
 
 response = requests.get(BG_IMAGE)
-file = open("./etc/tg-vc-bot.png", "wb")
+file = open("./etc/tg_vc_bot.png", "wb")
 file.write(response.content)
 file.close()
 
